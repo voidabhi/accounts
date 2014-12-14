@@ -11,7 +11,11 @@ require 'dbHelpers.php';
 		
         $query->bindParam(':username', $details['username']);
 
+<<<<<<< HEAD
         $query->bindParam(':password', md5($details['password']));	
+=======
+        $query->bindParam(':password', $details['password']);	
+>>>>>>> 19b68c5484f0d6a5cfb7e753940d1d564f7e1af6
 		
         $query->bindParam(':email', $details['email']);		
 
