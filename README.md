@@ -1,7 +1,7 @@
 Accounts Manager
 ========
 
-![accounts](https://github.com/voidabhi/accounts/blob/master/static/avatar.png)
+<a href="http://accounts-testing555.rhcloud.com/"><img src="https://github.com/voidabhi/accounts/blob/master/static/avatar.png" align="center" height="200"width="200" ></a>
 
 Simple PHP Accounts Manager
 
