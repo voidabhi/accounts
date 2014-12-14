@@ -1,51 +1,35 @@
 <?php
-session_start();
+    session_start(); 
 	
-	require 'helpers/registrationHelpers.php';
+	require 'helpers/loginHelpers.php';
 	
     $errors = array(
-        1=>'Please enter a valid username',
-        2=>'Please enter a valid password',
-        3=>'Please enter a valid email address',
-		4=>'Please complete the form',
-		5=>'Username already exists',
-		6=>'User registered successfully!'
+        1=>'Username or Password is incorrect!',
+        2=>'Please login before adding user!',
+		3=>'Please enter valid username and password!',
+		4=>'You have successfully logged out!'
     );
-	
-	$name = 'guest';
-	
-	if(!isset($_SESSION['username']))
-		header('Location:login.php?err=2');
-	else
-		$name = $_SESSION['username'];
 	
 	
 	if($_SERVER['REQUEST_METHOD']=='POST')
 	{
-		if(isset($_POST['username'],$_POST['email'],$_POST['city'],$_POST['password']))
+		if(isset($_POST['username'],$_POST['password']))
 		{
-			$validUser = validateUser($_POST);
-			if($validUser!=0)
-				header('Location:index.php?err='.$validUser);
-				
-			if(!userExists($_POST['username']))
+			if(checkUser($_POST['username'],$_POST['password']))
 			{
-				registerUser($_POST); 
-				header('Location:index.php?err=6');
+				$_SESSION['username'] = $_POST['username'];
+				header('Location:index.php');
 			}
 			else {
-				header('Location:index.php?err=5');
+				header('Location:login.php?err=1');
 			}
 		}
 		else
 		{	
-			header('Location:login.php?err=4');
+			header('Location:login.php?err=3');
 		}
 	}
-
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +44,7 @@ session_start();
     <link href="static/css/style.css" rel="stylesheet">
 	
 	<link rel="icon" href="static/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />	
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -72,39 +56,36 @@ session_start();
   <body>
     
     <div class="container">
+             
         
 	<div class="row clearfix center-block">
 		<div class="col-md-2 column">
 		</div>
 		<div class="col-md-8 column">
 			<div class="page-header">
-					<h1 class="text-left text-danger">Hi <?php print $name;?>!</h1>
-					<a href="logout.php" class="text-center">Logout</a>
+				<h1 class="text-center text-danger">
+					Accounts Manager
+				</h1>
 			</div>
 		</div>
 		<div class="col-md-2 column">
 		</div>
 	</div>        
+                   
 
         
-        <form class="form-signin" role="form" action="index.php" method="POST">
-          <h2 class="form-signin-heading text-center text-muted">Enter User Details</h2><br>
+        <form class="form-signin" role="form" action="login.php" method="POST">
+          <h2 class="form-signin-heading text-center text-muted">Sign In</h2><br>
+          
         <label for="inputUsername" class="sr-only">Username</label>
         <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" required autofocus>
-        <label for="inputEmail" class="sr-only">Email</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Email" name="email" required>    
-		<label for="inputCity" class="sr-only">City</label>
-        <input type="text" id="inputCity" class="form-control" placeholder="City" name="city" required>		
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
         <?php if(isset($_GET['err'])){?><p class="text-danger text-center"><?=$errors[$_GET['err']]?></p><?php }?>
-        <button class="btn btn-lg btn-primary btn-block btn-danger" type="submit">Add User</button><br>
+        <button class="btn btn-lg btn-primary btn-block btn-danger" type="submit">Sign in</button><br>
       </form>
 
     </div> 
-    <script src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
-	<script src="static/js/typeahead.js"></script>
-	<script src="static/js/script.js"></script>
   </body>
 </html>
