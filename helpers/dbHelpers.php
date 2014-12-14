@@ -10,7 +10,7 @@
 			// Server
             $username = 'adminR75paIY';
             $password = 'cAsUpXKJkz5n';
-            $conn = new pdo("mysql:host=localhost;dbname=accounts", $username, $password);
+            $conn = new pdo("mysql:host=127.7.184.2;dbname=accounts", $username, $password);
 			
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;
