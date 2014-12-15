@@ -23,6 +23,9 @@ Deploy to Openshift
     $ rhc cartridge add phpmyadmin -a accounts # upload database from db folder
     $ (git add, git commit)
     $ git push origin master
+    
+Developed By
+============
 
 Contribute
 ========
