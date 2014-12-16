@@ -27,6 +27,8 @@ Deploy to Openshift
 Developed By
 ============
 
+`Abhijeet Mohan`
+
 Contribute
 ========
 
