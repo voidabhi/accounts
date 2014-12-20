@@ -27,7 +27,7 @@ Deploy to Openshift
 Developed By
 ============
 
-`Abhijeet Mohan`
+`Abhijeet Mohan` - `void.aby@gmail.com`
 
 Contribute
 ========
