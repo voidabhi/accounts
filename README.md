@@ -38,3 +38,6 @@ Contribute
 ========
 
 Feel free to send a pull request to add new features!
+
+License
+=======
