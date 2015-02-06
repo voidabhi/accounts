@@ -10,11 +10,11 @@ require 'dbHelpers.php';
 		$query = dbConnect()->prepare("SELECT * FROM users WHERE username=:username AND password=:password");
 		
         $query->bindParam(':username', $username);
-<<<<<<< HEAD
+
 		$query->bindParam(':password', md5($password));		
-=======
+
 		$query->bindParam(':password', $password);		
->>>>>>> 19b68c5484f0d6a5cfb7e753940d1d564f7e1af6
+
 		
 		$query->execute();
 		
