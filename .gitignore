@@ -1,2 +1,5 @@
 
 .openshift
+
+composer.json
+composer.lock
