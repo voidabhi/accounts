@@ -5,7 +5,7 @@ Accounts Manager
 
 Simple account manager built with php.
 
-Built with [Bootstrap 3 framework](https://getbootstrap.com)
+UI built with [Bootstrap 3 framework](https://getbootstrap.com)
 
 Deploy to XAMPP
 ===============
