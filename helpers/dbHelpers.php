@@ -2,12 +2,12 @@
 <?php
     function dbConnect(){
         try{
-			// Localhost
+			// DB Config (Localhost)
             /*$username = 'root';
             $password = '';
             $conn = new pdo("mysql:host=localhost;dbname=accountsdb;", $username, $password);*/
 			
-			// Server
+			// DB Config (Server)
             $username = 'adminR75paIY';
             $password = 'cAsUpXKJkz5n';
             $conn = new pdo("mysql:host=127.7.184.2;dbname=accounts", $username, $password);
