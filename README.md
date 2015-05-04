@@ -21,7 +21,7 @@ Deploy to Openshift
     $ rhc create-app php-5.4 -a accounts
     $ rhc cartridge add mysql-5.5 -a accounts # update connections in helpers/dbHelpers.php
     $ rhc cartridge add phpmyadmin -a accounts # upload database from db folder
-    $ (git add, git commit)
+    $ (git branch, git add, git commit)
     $ git push origin master
     
 Developed By
