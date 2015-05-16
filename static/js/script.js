@@ -36,6 +36,7 @@ var stations= [
 var states = [];
 $(stations).each(function(i,e){states.push(e.name);});
 
+	// city auto-suggestion
 	$('#inputCity').typeahead({
 	  hint: true,
 	  highlight: false,
