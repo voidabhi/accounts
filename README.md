@@ -3,7 +3,7 @@ Accounts Manager
 
 <a href="http://accounts-testing555.rhcloud.com/"><img src="https://github.com/voidabhi/accounts/blob/master/static/avatar.png" align="center" height="200"width="200" ></a>
 
-Simple account manager built with php.
+Simple account manager built with php
 
 App UI built with [Bootstrap 3 framework](https://getbootstrap.com)
 
