@@ -46,8 +46,6 @@
 	
 	<link rel="icon" href="static/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />	
-=======
->>>>>>> 19b68c5484f0d6a5cfb7e753940d1d564f7e1af6
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
