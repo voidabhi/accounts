@@ -37,7 +37,7 @@ Developed By
 Contribute
 ========
 
-Feel free to send a pull request to add new features!
+Feel free to send a pull requests to add new features!
 
 License
 =======
