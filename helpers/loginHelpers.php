@@ -9,7 +9,7 @@ require 'dbHelpers.php';
 		
 		$query = dbConnect()->prepare("SELECT * FROM users WHERE username=:username AND password=:password");
 		
-        $query->bindParam(':username', $username);
+		 $query->bindParam(':username', $username);
 
 		$query->bindParam(':password', md5($password));		
 
@@ -18,7 +18,7 @@ require 'dbHelpers.php';
 		
 		$query->execute();
 		
-        $row = $query->fetch();
+		$row = $query->fetch();
 		
 		return count($row)>1;
 		
@@ -28,11 +28,11 @@ require 'dbHelpers.php';
 	{
 		$query = dbConnect()->prepare("SELECT * FROM users WHERE username=:username");
 		
-        $query->bindParam(':username', $username);	
+        	$query->bindParam(':username', $username);	
 		
 		$query->execute();
 		
-        if($row = $query->fetch())
+        	if($row = $query->fetch())
 		{
 			return array(
 				'username' => $row['username'],
