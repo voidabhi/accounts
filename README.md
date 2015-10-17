@@ -7,7 +7,7 @@ Simple account manager built with php
 
 App UI built with [Bootstrap 3](https://getbootstrap.com)
 
-Deploy to localhost (XAMPP)
+Deploy to localhost (XAMPP / WAMP)
 ===============
 	
 	1. Download zip,rename it accounts and place it in htdocs folder
