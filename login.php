@@ -3,29 +3,23 @@
 	
 	require 'helpers/loginHelpers.php';
 	
-    $errors = array(
-        1=>'Username or Password is incorrect!',
-        2=>'Please login before adding user!',
-		3=>'Please enter valid username and password!',
-		4=>'You have successfully logged out!'
-    );
+	    $errors = array(
+	        1=>'Username or Password is incorrect!',
+	        2=>'Please login before adding user!',
+			3=>'Please enter valid username and password!',
+			4=>'You have successfully logged out!'
+	    );
 	
 	
-	if($_SERVER['REQUEST_METHOD']=='POST')
-	{
-		if(isset($_POST['username'],$_POST['password']))
-		{
-			if(checkUser($_POST['username'],$_POST['password']))
-			{
+	if($_SERVER['REQUEST_METHOD']=='POST') {
+		if(isset($_POST['username'],$_POST['password'])) {
+			if(checkUser($_POST['username'],$_POST['password'])) {
 				$_SESSION['username'] = $_POST['username'];
 				header('Location:index.php');
-			}
-			else {
+			} else {
 				header('Location:login.php?err=1');
 			}
-		}
-		else
-		{	
+		} else {	
 			header('Location:login.php?err=3');
 		}
 	}
@@ -42,7 +36,6 @@
     <!-- Bootstrap -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/style.css" rel="stylesheet">
-<<<<<<< HEAD
 	
 	<link rel="icon" href="static/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon" />	
