@@ -12,7 +12,7 @@ Deploy to localhost (XAMPP / WAMP)
 	
 	1. Download zip,rename it accounts and place it in htdocs folder
 	2. Update connections in helpers/dbHelpers.php
-	3. Upload database from db folder to phpmyadmin
+	3. Upload database from db folder to [phpmyadmin](https://www.phpmyadmin.com)
 	4. Run the project from browser at http://localhost/accounts/
 
 Deploy to Openshift
