@@ -18,7 +18,7 @@ Deploy to localhost (XAMPP / WAMP)
 Deploy to Openshift
 ===============
 	
-    $ rhc create-app php-5.4 -a accounts
+    $ rhc create-app php-5.4 -a accounts # creating php instance 
     $ rhc cartridge add mysql-5.5 -a accounts # update connections in helpers/dbHelpers.php
     $ rhc cartridge add phpmyadmin -a accounts # upload database from db folder
     $ (git branch, git add, git commit)
