@@ -4,6 +4,7 @@
 
 require 'dbHelpers.php';
 
+	// check if user with username and password exists
 	function checkUser($username,$password)
 	{
 		
