@@ -7,16 +7,14 @@ Simple account manager built with php
 
 App UI built with [Bootstrap 3](https://getbootstrap.com)
 
-Deploy to localhost (XAMPP / WAMP)
-===============
+### Deploy to localhost (<a href="http://www.xampp.org">XAMPP</a> / WAMP)
 	
 	1. Download zip,rename it accounts and place it in htdocs folder
 	2. Update connections in helpers/dbHelpers.php
 	3. Upload database from db folder to [phpmyadmin](https://www.phpmyadmin.com)
 	4. Run the project from browser at http://localhost/accounts/
 
-Deploy to Openshift
-===============
+### Deploy to Openshift
 	
     $ rhc create-app php-5.4 -a accounts # creating php instance 
     $ rhc cartridge add mysql-5.5 -a accounts # update connections in helpers/dbHelpers.php
@@ -24,8 +22,7 @@ Deploy to Openshift
     $ (git branch, git add, git commit)
     $ git push origin master
     
-Developed By
-============
+### Developed By
 
 `Abhijeet Mohan` - `void.aby@gmail.com`
 
@@ -34,13 +31,11 @@ Developed By
        src="http://data.pkmmte.com/temp/social_google_plus_logo.png" />
 </a>
 
-Contribute
-========
+### Contribute
 
 Feel free to send a pull requests to add new features!
 
-License
-=======
+### License
 
 ```
 The MIT License (MIT)
