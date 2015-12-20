@@ -1,3 +1,4 @@
 .openshift
 composer.json
 composer.lock
+.DS_Store
