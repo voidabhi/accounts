@@ -34,6 +34,8 @@ var stations= [
 ];
 // list of states
 var states = [];
+
+// add stations to typeahead
 $(stations).each(function(i,e){states.push(e.name);});
 
 	// city auto-suggestion
