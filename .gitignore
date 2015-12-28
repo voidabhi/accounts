@@ -2,3 +2,5 @@
 composer.json
 composer.lock
 .DS_Store
+*.pem
+*.pub
