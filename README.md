@@ -7,7 +7,7 @@ Simple account manager built with php
 
 App UI built with [Bootstrap 3](https://getbootstrap.com)
 
-### Deploy to localhost (<a href="http://www.xampp.org">XAMPP</a> / WAMP)
+### Deploy to localhost (<a href="http://www.xampp.org">XAMPP</a> / <a href="http://www.wampserver.com">WAMP</a>)
 	
 	1. Download zip,rename it accounts and place it in htdocs folder
 	2. Update connections in helpers/dbHelpers.php
