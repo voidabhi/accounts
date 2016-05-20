@@ -25,6 +25,7 @@ require 'dbHelpers.php';
 		
 	}
 	
+	// fetch user information by username
 	function fetchUser($username)
 	{
 		$query = dbConnect()->prepare("SELECT * FROM users WHERE username=:username");
