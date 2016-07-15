@@ -1,0 +1,25 @@
+{
+  "name": "voidabhi/accounts",
+  "description": "Simple Account Management",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "voidabhi/accounts",
+        "type": "library",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/voidabhi/account"
+        },
+        "require": {
+          "composer/installers": "v0.0.1"
+        }
+      }
+    }
+  ]
+}
