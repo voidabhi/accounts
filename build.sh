@@ -2,4 +2,4 @@
 
 # lint command
 
-vendor/bin/phpcs --standard=scripts/ruleset.xml .
+vendor/bin/phpcs --standard=./ruleset.xml .
