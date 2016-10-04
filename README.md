@@ -11,6 +11,7 @@ App UI built with [Bootstrap 3](https://getbootstrap.com)
 
 	1. Install composer
 	2. Run composer install
+	3. Run build script
 
 ### Deploy to localhost (<a href="http://www.xampp.org">XAMPP</a> / <a href="http://www.wampserver.com">WAMP</a>)
 	
